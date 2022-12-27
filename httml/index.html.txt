@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Formulaire de renseignements</title>
+  </head>
+  <body>
+    <h1>Formulaire de renseignements</h1>
+    <form action="destination.html">
+      <fieldset>
+        <legend>Renseignements personnels</legend>
+        <label for="prenom">Prénom :</label>
+        <input type="text" name="prenom" id="prenom">
+        <br>
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom" id="nom">
+        <br>
+        <label for="naissance">Date de naissance :</label>
+        <input type="date" name="naissance" id="naissance">
+        <br>
+        <fieldset>
+          <legend>Lieu de naissance</legend>
+          <input type="radio" name="lieu" id="france" value="France">
+          <label for="france">France</label>
+          <br>
+          <input type="radio" name="lieu" id="etranger" value="Etranger">
+          <label for="etranger">Etranger</label>
+        </fieldset>
+        <br>
+        <label for="adresse">Adresse postale :</label>
+        <br>
+        <textarea name="adresse" id="adresse" rows="2" cols="30" placeholder="Adresse"></textarea>
+        <br>
+        <label for="code_postal">Code postal :</label>
+        <input type="number" name="code_postal" id="code_postal">
+        <br>
+        <label for="email">Adresse électronique :</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="site">Page personnelle :</label>
+        <input type="url" name="site" id="site">
+        <br>
+        <label for="telephone">Téléphone portable :</label>
+        <input type="text" name="telephone" id="telephone">
+        <br>
+        <label for="semestre">Semestre :</label>
+        <select name="semestre" id="semestre">
+          <option value="S1">S1</option>
+          <option value="S2">S2</option>
+          <option value="S3">S3</option>
+          <option value="S4">S4</option>
+        </select>
+        <br>
+        <label for="html">Niveau en HTML :</label>
+        <input type="range" name="html" id="html" min="0" max="10" step="1">
+        <br>
+        <fieldset>
+          <legend>Connaissances</legend>
+          <input type="checkbox" name="css" id="css" value="css">
